@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package serviceb;
+
+service ServiceBAPI {
+  rpc Hello(HelloRequest) returns (HelloResponse);
+}
+
+message HelloRequest {
+    int64 num = 1;
+}
+
+message HelloResponse {
+    int64 resp = 1;
+}
